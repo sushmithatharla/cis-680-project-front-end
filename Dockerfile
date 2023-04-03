@@ -6,7 +6,7 @@ WORKDIR /cis-680-project-front-end
 
 
 # Copy package.json and package-lock.json to the container
-COPY cis-680-project-front-end/package*.json ./
+COPY package*.json ./
 
 # Install dependencies
 RUN npm install
