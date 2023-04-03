@@ -1,6 +1,6 @@
 FROM node:14-alpine
 
-WORKDIR /app
+WORKDIR /cis-680-project-front-end
 
 COPY package*.json ./
 
