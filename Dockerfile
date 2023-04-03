@@ -2,16 +2,18 @@
 FROM node:16-alpine AS build
 
 # Set the working directory to /app
-WORKDIR /front-end
+WORKDIR /cis-680-project-front-end
+
 
 # Copy package.json and package-lock.json to the container
-COPY front-end/package*.json ./
+COPY cis-680-project-front-end
+/package*.json ./
 
 # Install dependencies
 RUN npm install
 
 # Copy the rest of the application code to the container
-COPY front-end .
+COPY cis-680-project-front-end .
 
 # Build the application
 RUN npm run build
@@ -20,7 +22,7 @@ RUN npm run build
 FROM nginx:alpine
 
 # Copy the build folder from the previous stage to the Nginx image
-COPY --from=build /app/build /usr/share/nginx/html
+COPY --from=build /cis-680-project-front-end/build /usr/share/nginx/html
 
 # Expose port 80
 EXPOSE 80
