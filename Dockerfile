@@ -9,7 +9,7 @@ WORKDIR /cis-680-project-front-end
 COPY package*.json ./
 
 # Install dependencies
-RUN npm install
+RUN npm install --force
 
 # Copy the rest of the application code to the container
 COPY cis-680-project-front-end .
