@@ -12,8 +12,4 @@ COPY . .
 
 RUN npm run build
 
-COPY ./nginx/nginx.conf /etc/nginx/nginx.conf
-
-COPY --from=build /lit-clothing/build /usr/share/nginx/html
-
 CMD ["npm", "start"]
