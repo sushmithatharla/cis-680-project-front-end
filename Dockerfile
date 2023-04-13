@@ -2,7 +2,7 @@ FROM node:16.15.1 as build
 
 WORKDIR /cis-680-project-front-end
 
-COPY package*.json .
+COPY package*.json ./
 
 RUN npm install
 
