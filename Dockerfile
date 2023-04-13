@@ -4,7 +4,9 @@ WORKDIR /cis-680-project-front-end
 
 COPY package*.json ./
 
-RUN npm install
+RUN npm config set legacy-peer-deps true
+
+RUN npm install --save --legacy-peer-deps
 
 COPY . .
 
