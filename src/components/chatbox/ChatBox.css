@@ -13,11 +13,15 @@
 }
 
 #card-header-styles {
-    background-color: #0032a0 !important;
+    background-color: #61b6db !important;
+}
+
+#style-message {
+    background-color: #61b6db !important;
 }
 
 .send-message {
-    color: #0032a0;
+    color: #61b6db;
 }
 
 .text-area-style {
@@ -38,7 +42,7 @@
     font-size: 1.5rem;
     float: right;
     border-radius: 30px;
-    background-color: #0032a0;
+    background-color: #61b6db !important;
     padding: 15px;
     color: white;
     cursor: pointer;

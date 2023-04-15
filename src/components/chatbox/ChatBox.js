@@ -8,7 +8,9 @@ import { faPaperPlane, faComment } from "@fortawesome/free-solid-svg-icons";
 
 const ChatBox = ({ showBotFlag }) => {
   const messageEl = useRef(null);
-  const { post } = useFetch("https://calm-anchorage-89848.herokuapp.com/api");
+  const { post } = useFetch(
+    "https://us-east1-tharla-cis-680-term-project.cloudfunctions.net/cadTermProject3"
+  );
 
   const getTime = () => {
     const date = new Date();
@@ -98,7 +100,10 @@ const ChatBox = ({ showBotFlag }) => {
     return (
       <div className="d-flex flex-row justify-content-end mb-4 pt-1">
         <div>
-          <p className="small p-2 me-3 mb-1 text-white rounded-3 bg-primary">
+          <p
+            className="small p-2 me-3 mb-1 text-white rounded-3 bg-primary"
+            id="style-message"
+          >
             {renderText(text, type)}
           </p>
         </div>
@@ -131,7 +136,7 @@ const ChatBox = ({ showBotFlag }) => {
         />
         <div>
           <p
-            className="small p-2 ms-3 mb-1 rounded-3"
+            className="small p-2 ms-3 mb-1 rounded-3 style-message"
             style={{ backgroundColor: "#f5f6f7", fontWeight: 700 }}
           >
             {renderText(text, type)}
