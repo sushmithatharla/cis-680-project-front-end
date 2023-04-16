@@ -9,7 +9,7 @@ import { faPaperPlane, faComment } from "@fortawesome/free-solid-svg-icons";
 const ChatBox = ({ showBotFlag }) => {
   const messageEl = useRef(null);
   const { post } = useFetch(
-    "https://us-east1-tharla-cis-680-term-project.cloudfunctions.net/cadTermProject3"
+    "https://us-east1-tharla-cis-680-term-project.cloudfunctions.net/cadTermProject"
   );
 
   const getTime = () => {

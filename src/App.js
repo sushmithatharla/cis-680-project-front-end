@@ -6,9 +6,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <div>
-          <span className="gvsu-label">
-            WELCOME TO E COMMERCE CAR SALES WEBSITE
-          </span>
+          <span className="gvsu-label">WELCOME TO GVSU</span>
           <Chat />
         </div>
       </header>
